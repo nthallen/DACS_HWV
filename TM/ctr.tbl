@@ -1,0 +1,31 @@
+Ctr_0 {
+  HBox { +-; Title: "Ctr Bd 0"; -+ };
+  A: HBox{ (Ctr_0A,8); (Ct0AOvf,2); };
+  B: HBox{ (Ctr_0B,8); (Ct0BOvf,2); };
+  C: HBox{ (Ctr_0C,8); (Ct0COvf,2); };
+  D: HBox{ (Ctr_0D,8); (Ct0DOvf,2); };
+  L: (Ct0Latch,2);
+}
+
+Ctr_1 {
+  HBox { +-; Title: "Ctr Bd 1"; -+ };
+  A: HBox{ (Ctr_1A,8); (Ct1AOvf,2); };
+  B: HBox{ (Ctr_1B,8); (Ct1BOvf,2); };
+  C: HBox{ (Ctr_1C,8); (Ct1COvf,2); };
+  D: HBox{ (Ctr_1D,8); (Ct1DOvf,2); };
+  L: (Ct1Latch,2);
+}
+
+Ctr_2 {
+  HBox { +-; Title: "Ctr Bd 2"; -+ };
+  A: HBox{ (Ctr_2A,8); (Ct2AOvf,2); };
+  B: HBox{ (Ctr_2B,8); (Ct2BOvf,2); };
+  C: HBox{ (Ctr_2C,8); (Ct2COvf,2); };
+  D: HBox{ (Ctr_2D,8); (Ct2DOvf,2); };
+  L: (Ct2Latch,2);
+}
+
+{ HBox { |; [Ctr_0]; |;[Ctr_1]; |;[Ctr_2]; |; };
+  -;
+  >{ Time: (flttime,8) MFCtr: (MFCtr,5) }
+}

@@ -1,0 +1,93 @@
+%{
+  const char *ok_fail_text[] = { "  ok", "FAIL" };
+  const char *no_yes_text[]  = { " no", "yes" };
+  const char *rw_text[] = { "--", "-W", "R-", "RW" };
+  const char *qclimode_text[] = {
+	"   idle",
+	"program",
+	"psector",
+	"    run",
+	" select",
+	"-------",
+	"-------",
+	"======="
+  };
+  const char *ovf_text[] = {
+    " | | ",
+    "*| | ",
+    " |*| ",
+    "*|*| ",
+    " | |*",
+    "*| |*",
+    " |*|*",
+    "*|*|*" };
+%}
+TM typedef int ok_fail_t { text "%4d" ok_fail_text[]; }
+TM typedef int no_yes_t { text "%3d" no_yes_text[]; }
+TM typedef int onebit_t { text "%1d"; }
+TM typedef int twobits_t { text "%02b"; }
+TM typedef int qclimode_t { text "%7d" qclimode_text[]; }
+TM typedef int SSP_OVF { text "%5d" ovf_text[]; }
+TM typedef int rw_t { text "%2d" rw_text[]; }
+TM typedef unsigned char fifodep_t { text "%3u"; }
+TM typedef unsigned char qclierr_t { text "%02x"; }
+
+no_yes_t QCLI_0_busy; invalidate QCLI_0_busy;
+  { QCLI_0_busy = (QCLI_0_s & 0x8000) ? 1 : 0;
+    validate QCLI_0_busy; }
+onebit_t QCLI_0_cksum; invalidate QCLI_0_cksum;
+  { QCLI_0_cksum = (QCLI_0_s & 0x4000) ? 1 : 0;
+    validate QCLI_0_cksum; }
+ok_fail_t QCLI_0_cmderr; invalidate QCLI_0_cmderr;
+  { QCLI_0_cmderr = (QCLI_0_s & 0x2000) ? 1 : 0;
+    validate QCLI_0_cmderr; }
+off_on_t QCLI_0_laser; invalidate QCLI_0_laser;
+  { QCLI_0_laser = (QCLI_0_s & 0x1000) ? 0 : 1;
+    validate QCLI_0_laser; }
+ok_fail_t QCLI_0_cordte; invalidate QCLI_0_cordte;
+  { QCLI_0_cordte = (QCLI_0_s & 0x0800) ? 1 : 0;
+    validate QCLI_0_cordte; }
+no_yes_t QCLI_0_ready; invalidate QCLI_0_ready;
+  { QCLI_0_ready = (QCLI_0_s & 0x0200) ? 1 : 0;
+    validate QCLI_0_ready; }
+ok_fail_t QCLI_0_waveerr; invalidate QCLI_0_waveerr;
+  { QCLI_0_waveerr = (QCLI_0_s & 0x0100) ? 1 : 0;
+    validate QCLI_0_waveerr; }
+twobits_t QCLI_0_flash; invalidate QCLI_0_flash;
+  { QCLI_0_flash = (QCLI_0_s & 0x00C0) >> 6;
+    validate QCLI_0_flash; }
+ok_fail_t QCLI_0_dot; invalidate QCLI_0_dot;
+  { QCLI_0_dot = (QCLI_0_s & 0x0020) ? 1 : 0;
+    validate QCLI_0_dot; }
+ok_fail_t QCLI_0_lot; invalidate QCLI_0_lot;
+  { QCLI_0_lot = (QCLI_0_s & 0x0010) ? 1 : 0;
+    validate QCLI_0_lot; }
+ok_fail_t QCLI_0_loc; invalidate QCLI_0_loc;
+  { QCLI_0_loc = (QCLI_0_s & 0x0008) ? 1 : 0;
+    validate QCLI_0_loc; }
+qclimode_t QCLI_0_mode; invalidate QCLI_0_mode;
+  { QCLI_0_mode = QCLI_0_s & 0x7; validate QCLI_0_mode; }
+rw_t QCLI_0_rw; invalidate QCLI_0_rw;
+  { QCLI_0_rw = ((QCLI_0_CS & 0x4000) ? 2 : 0) +
+                ((QCLI_0_CS & 0x400) ? 1 : 0);
+    validate QCLI_0_rw;
+  }
+ok_fail_t QCLI_0_present; invalidate QCLI_0_present;
+  { QCLI_0_present = (QCLI_0_CS & 0x800) ? 0 : 1;
+    validate QCLI_0_present;
+  }
+fifodep_t QCLI_0_fifodep; invalidate QCLI_0_fifodep;
+  { QCLI_0_fifodep = QCLI_0_CS & 0xFF;
+    validate QCLI_0_fifodep;
+  }
+qclierr_t QCLI_0_err; invalidate QCLI_0_err;
+  { QCLI_0_err = ((QCLI_0_CS >> 8) & 0xBB) ^ 0x8;
+    validate QCLI_0_err;
+  }
+
+SSP_OVF SSP_0_CA; Invalidate SSP_0_CA;
+SSP_OVF SSP_0_PA; Invalidate SSP_0_PA;
+SSP_OVF SSP_0_AD; Invalidate SSP_0_AD;
+{ SSP_0_CA = SSP_CAOVF(SSP_0_Flags); Validate SSP_0_CA; }
+{ SSP_0_PA = SSP_PAOVF(SSP_0_Flags); Validate SSP_0_PA; }
+{ SSP_0_AD = SSP_ADOOR(SSP_0_Flags); Validate SSP_0_AD; }

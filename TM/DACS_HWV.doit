@@ -1,0 +1,4 @@
+display DACS_HWVdisp
+client DACS_HWVclt
+batchfile interact
+memo

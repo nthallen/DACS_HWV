@@ -1,0 +1,49 @@
+Cmd_0 {
+  ""  DS  >S<  >I<;
+  "0:" (Cmd_0_DS,3) (Cmd_0_S,3) (AID10,5);
+  "1:" (Cmd_1_DS,3) (Cmd_1_S,3) (AID12,5);
+  "2:" (Cmd_2_DS,3) (Cmd_2_S,3) (AID14,5);
+  "3:" (Cmd_3_DS,3) (Cmd_3_S,3) (AID16,5);
+  "4:" (Cmd_4_DS,3) (Cmd_4_S,3) (AID18,5);
+  "5:" (Cmd_5_DS,3) (Cmd_5_S,3) (AID1A,5);
+  "6:" (Cmd_6_DS,3) (Cmd_6_S,3) (AID1C,5);
+  "7:" (Cmd_7_DS,3) (Cmd_7_S,3) (AID1E,5);
+}
+Cmd_1 {
+  ""  DS  >S<  >I<;
+  "8:" (Cmd_8_DS,3) (Cmd_8_S,3) (AID3E,5);
+  "9:" (Cmd_9_DS,3) (Cmd_9_S,3) (AID3C,5);
+  "10:" (Cmd_10_DS,3) (Cmd_10_S,3) (AID3A,5);
+  "11:" (Cmd_11_DS,3) (Cmd_11_S,3) (AID38,5);
+  "12:" (Cmd_12_DS,3) (Cmd_12_S,3) (AID36,5);
+  "13:" (Cmd_13_DS,3) (Cmd_13_S,3) (AID34,5);
+  "14:" (Cmd_14_DS,3) (Cmd_14_S,3) (AID32,5);
+  "15:" (Cmd_15_DS,3) (Cmd_15_S,3) (AID30,5);
+}
+Cmd_2 {
+  ""  DS  >S<  >I<;
+  "16:" (Cmd_16_DS,3) (Cmd_16_S,3) (AID5E,5);
+  "17:" (Cmd_17_DS,3) (Cmd_17_S,3) (AID5C,5);
+  "18:" (Cmd_18_DS,3) (Cmd_18_S,3) (AID5A,5);
+  "19:" (Cmd_19_DS,3) (Cmd_19_S,3) (AID58,5);
+  "20:" (Cmd_20_DS,3) (Cmd_20_S,3) (AID56,5);
+  "21:" (Cmd_21_DS,3) (Cmd_21_S,3) (AID54,5);
+  "22:" (Cmd_22_DS,3) (Cmd_22_S,3) (AID52,5);
+  "23:" (Cmd_23_DS,3) (Cmd_23_S,3) (AID50,5);
+}
+Cmd_3 {
+  ""  DS;
+  "24:" (Cmd_24_DS,3);
+  "25:" (Cmd_25_DS,3);
+  "26:" (Cmd_26_DS,3);
+  "27:" (Cmd_27_DS,3);
+  "28:" (Cmd_28_DS,3);
+  "29:" (Cmd_29_DS,3);
+  "30:" (Cmd_30_DS,3);
+  "31:" (Cmd_31_DS,3);
+}
+{ HBox { +-; Commands; -+ };
+  HBox { +|; [Cmd_0]; +|; [Cmd_1]; +|; [Cmd_2]; +|; [Cmd_3]; +| };
+  -;
+  >{ Time: (flttime,8) MFCtr: (MFCtr,5) }
+}

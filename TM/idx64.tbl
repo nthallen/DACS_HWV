@@ -1,0 +1,9 @@
+Idx { HBox { +-; Title: Indexers; -+ };
+  "0:" (IX0Step,5) (IX0Dgrm,5)
+	  (IX0Scan,4) (IX0Kill,5);
+}
+
+{ [Idx];
+  -;
+  >{ Time: (flttime,8) MFCtr: (MFCtr,5) }
+}

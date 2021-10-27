@@ -1,0 +1,16 @@
+%{
+  static const char *QCLI_0_Wt[] = {
+    "QCLI_0_slo",
+    "QCLI_0    ",
+    "QCLI_0_ful",
+    "QCLI_0_10M",
+    "QCLI_0_Con"
+  };
+  #define N_QCLI_0_WAVES 5
+
+  const char *QCLI_0_Wave_text( int n ) {
+    if ( n < 0 || n >= N_QCLI_0_WAVES )
+      return "----------";
+    else return QCLI_0_Wt[n];
+  }
+%}

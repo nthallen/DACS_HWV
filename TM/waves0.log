@@ -1,0 +1,100 @@
+Waveform Summaries:
+
+ICOS Waveform QCLI_0_slow @ 128 {
+  Sampling:    4444 @ 4e+06/Sec/4 (1e+06/Sec/1)
+  Net Samples: 1111 Z:56 ramp:1000
+  Iz:          0 mA
+  dI/dt:       30 A/sec
+  Tcycle:      1.112 msec
+  Fcycle:      900 Hz
+  Stepsize:    8 usec
+  Scycle:      139 278
+  Tz:          0.056 msec, 56 Samples, 9.991% (10%)
+  Ton/Toff:    1/7 usec
+  Ttrigger:    1.111 msec
+  Trecycle:    1 usec
+  Ramp {
+    Istart:    60 mA (60 mA)
+    Istop:     90 mA (90 mA)
+    Tramp:     1 msec (1 msec)
+    Sramp:     125
+  }
+}
+
+ICOS Waveform QCLI_0 @ 416 {
+  Sampling:    52600 @ 5e+07/Sec/50 (5e+07/Sec/50)
+  Net Samples: 1052 Z:26 ramp:1000
+  Iz:          0 mA
+  dI/dt:       30 A/sec
+  Tcycle:      1.252 msec
+  Fcycle:      799 Hz
+  Stepsize:    2 usec
+  Scycle:      626 626
+  Tz:          0.026 msec, 26 Samples, 4.94297% (5%)
+  Ton/Toff:    2/2 usec
+  Ttrigger:    1.052 msec
+  Trecycle:    200 usec
+  Ramp {
+    Istart:    60 mA (60 mA)
+    Istop:     90 mA (90 mA)
+    Tramp:     1 msec (1 msec)
+    Sramp:     500
+  }
+}
+
+ICOS Waveform QCLI_0_full @ 1052 {
+  Sampling:    106000 @ 5e+07/Sec/50 (5e+07/Sec/50)
+  Net Samples: 2120 Z:53 ramp:2014
+  Iz:          0 mA
+  dI/dt:       30 A/sec
+  Tcycle:      2.332 msec
+  Fcycle:      429 Hz
+  Stepsize:    53 usec
+  Scycle:      44 44
+  Tz:          0.053 msec, 53 Samples, 5% (5%)
+  Ton/Toff:    53/53 usec
+  Ttrigger:    2.12 msec
+  Trecycle:    212 usec
+  Ramp {
+    Istart:    60 mA (60 mA)
+    Istop:     120.42 mA (120 mA)
+    Tramp:     2.014 msec (2 msec)
+    Sramp:     38
+  }
+}
+
+ICOS Waveform QCLI_0_10MHz @ 1106 {
+  Sampling:    21200 @ 1e+07/Sec/10 (1e+07/Sec/10)
+  Net Samples: 2120 Z:53 ramp:2014
+  Iz:          0 mA
+  dI/dt:       40 A/sec
+  Tcycle:      2.332 msec
+  Fcycle:      429 Hz
+  Stepsize:    53 usec
+  Scycle:      44 44
+  Tz:          0.053 msec, 53 Samples, 5% (5%)
+  Ton/Toff:    53/53 usec
+  Ttrigger:    2.12 msec
+  Trecycle:    212 usec
+  Ramp {
+    Istart:    10 mA (10 mA)
+    Istop:     90.56 mA (90 mA)
+    Tramp:     2.014 msec (2 msec)
+    Sramp:     38
+  }
+}
+
+ICOS Waveform QCLI_0_ConstantI @ 1160 {
+  Sampling:    198000 @ 1e+07/Sec/1 (1e+07/Sec/1)
+  Net Samples: 198000 Z:100000 ramp:0
+  Iz:          70 mA
+  dI/dt:       0 A/sec
+  Tcycle:      20 msec
+  Fcycle:      50 Hz
+  Stepsize:    10000 usec
+  Scycle:      2 4
+  Tz:          10 msec, 100000 Samples, 100% (10 msec)
+  Ton/Toff:    200/9800 usec
+  Ttrigger:    19.8 msec
+  Trecycle:    200 usec
+}

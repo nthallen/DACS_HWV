@@ -1,0 +1,4 @@
+%{
+  ssp_data_t SSP_0;
+  qcli_data_t QCLI_0;
+%}

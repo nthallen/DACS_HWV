@@ -1,0 +1,17 @@
+# Startup script for DACS Diagnostic
+  Launch memo memo -o $Experiment.log
+  memo=/dev/huarp/$Experiment/memo
+  Launch TM/DCo TMbfr
+  echo "Running script interact" >$memo
+
+# Verify and/or Program QCLIs
+  qclidprog -h QCLI_0 -d0 -cwc $TMBINDIR/waves0.out
+
+  Launch dccc   dccc -f $TMBINDIR/digio.dccc
+  Launch DG/cmd DACS_HWVcol
+  Launch cmd/server DACS_HWVsrvr
+  Launch - lgr -N `mlf_find LOG`
+  Launch - idx64 `cat $TMBINDIR/idx64.idx64`
+  Launch - sspdrv -b0 -hSSP_0 -N `mlf_find SSP_0`
+  Launch - qclidacsd -h QCLI_0 -d 0
+  Launch - DACS_HWValgo -v

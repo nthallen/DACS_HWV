@@ -1,0 +1,12 @@
+PM_0 {
+  HBox { +-; Title: "PwrMon 0"; -+ };
+  >(PM0TO,7)<;
+  ""   >I<   >V<;
+  "1:" HBox{ (PM0I1,5); (PM0I1S,1) } HBox{ (PM0V1,7); (PM0V1S,1) };
+  "2:" HBox{ (PM0I2,5); (PM0I2S,1) } HBox{ (PM0V2,7); (PM0V2S,1) };
+}
+
+{ HBox { |+; [PM_0]; |+; };
+  -;
+  >{ Time: (flttime,8) MFCtr: (MFCtr,5) }
+}

@@ -1,0 +1,112 @@
+off_on_t Cmd_0_DS; invalidate Cmd_0_DS;
+{ Cmd_0_DS = (DS82A >> 0) & 1; Validate Cmd_0_DS; }
+off_on_t Cmd_1_DS; invalidate Cmd_1_DS;
+{ Cmd_1_DS = (DS82A >> 1) & 1; Validate Cmd_1_DS; }
+off_on_t Cmd_2_DS; invalidate Cmd_2_DS;
+{ Cmd_2_DS = (DS82A >> 2) & 1; Validate Cmd_2_DS; }
+off_on_t Cmd_3_DS; invalidate Cmd_3_DS;
+{ Cmd_3_DS = (DS82A >> 3) & 1; Validate Cmd_3_DS; }
+off_on_t Cmd_4_DS; invalidate Cmd_4_DS;
+{ Cmd_4_DS = (DS82A >> 4) & 1; Validate Cmd_4_DS; }
+off_on_t Cmd_5_DS; invalidate Cmd_5_DS;
+{ Cmd_5_DS = (DS82A >> 5) & 1; Validate Cmd_5_DS; }
+off_on_t Cmd_6_DS; invalidate Cmd_6_DS;
+{ Cmd_6_DS = (DS82A >> 6) & 1; Validate Cmd_6_DS; }
+off_on_t Cmd_7_DS; invalidate Cmd_7_DS;
+{ Cmd_7_DS = (DS82A >> 7) & 1; Validate Cmd_7_DS; }
+off_on_t Cmd_8_DS; invalidate Cmd_8_DS;
+{ Cmd_8_DS = (DS833 >> 0) & 1; Validate Cmd_8_DS; }
+off_on_t Cmd_9_DS; invalidate Cmd_9_DS;
+{ Cmd_9_DS = (DS833 >> 1) & 1; Validate Cmd_9_DS; }
+off_on_t Cmd_10_DS; invalidate Cmd_10_DS;
+{ Cmd_10_DS = (DS833 >> 2) & 1; Validate Cmd_10_DS; }
+off_on_t Cmd_11_DS; invalidate Cmd_11_DS;
+{ Cmd_11_DS = (DS833 >> 3) & 1; Validate Cmd_11_DS; }
+off_on_t Cmd_12_DS; invalidate Cmd_12_DS;
+{ Cmd_12_DS = (DS833 >> 4) & 1; Validate Cmd_12_DS; }
+off_on_t Cmd_13_DS; invalidate Cmd_13_DS;
+{ Cmd_13_DS = (DS833 >> 5) & 1; Validate Cmd_13_DS; }
+off_on_t Cmd_14_DS; invalidate Cmd_14_DS;
+{ Cmd_14_DS = (DS833 >> 6) & 1; Validate Cmd_14_DS; }
+off_on_t Cmd_15_DS; invalidate Cmd_15_DS;
+{ Cmd_15_DS = (DS833 >> 7) & 1; Validate Cmd_15_DS; }
+off_on_t Cmd_16_DS; invalidate Cmd_16_DS;
+{ Cmd_16_DS = (DS82C >> 0) & 1; Validate Cmd_16_DS; }
+off_on_t Cmd_17_DS; invalidate Cmd_17_DS;
+{ Cmd_17_DS = (DS82C >> 1) & 1; Validate Cmd_17_DS; }
+off_on_t Cmd_18_DS; invalidate Cmd_18_DS;
+{ Cmd_18_DS = (DS82C >> 2) & 1; Validate Cmd_18_DS; }
+off_on_t Cmd_19_DS; invalidate Cmd_19_DS;
+{ Cmd_19_DS = (DS82C >> 3) & 1; Validate Cmd_19_DS; }
+off_on_t Cmd_20_DS; invalidate Cmd_20_DS;
+{ Cmd_20_DS = (DS82C >> 4) & 1; Validate Cmd_20_DS; }
+off_on_t Cmd_21_DS; invalidate Cmd_21_DS;
+{ Cmd_21_DS = (DS82C >> 5) & 1; Validate Cmd_21_DS; }
+off_on_t Cmd_22_DS; invalidate Cmd_22_DS;
+{ Cmd_22_DS = (DS82C >> 6) & 1; Validate Cmd_22_DS; }
+off_on_t Cmd_23_DS; invalidate Cmd_23_DS;
+{ Cmd_23_DS = (DS82C >> 7) & 1; Validate Cmd_23_DS; }
+off_on_t Cmd_24_DS; invalidate Cmd_24_DS;
+{ Cmd_24_DS = (DS835 >> 0) & 1; Validate Cmd_24_DS; }
+off_on_t Cmd_25_DS; invalidate Cmd_25_DS;
+{ Cmd_25_DS = (DS835 >> 1) & 1; Validate Cmd_25_DS; }
+off_on_t Cmd_26_DS; invalidate Cmd_26_DS;
+{ Cmd_26_DS = (DS835 >> 2) & 1; Validate Cmd_26_DS; }
+off_on_t Cmd_27_DS; invalidate Cmd_27_DS;
+{ Cmd_27_DS = (DS835 >> 3) & 1; Validate Cmd_27_DS; }
+off_on_t Cmd_28_DS; invalidate Cmd_28_DS;
+{ Cmd_28_DS = (DS835 >> 4) & 1; Validate Cmd_28_DS; }
+off_on_t Cmd_29_DS; invalidate Cmd_29_DS;
+{ Cmd_29_DS = (DS835 >> 5) & 1; Validate Cmd_29_DS; }
+off_on_t Cmd_30_DS; invalidate Cmd_30_DS;
+{ Cmd_30_DS = (DS835 >> 6) & 1; Validate Cmd_30_DS; }
+off_on_t Cmd_31_DS; invalidate Cmd_31_DS;
+{ Cmd_31_DS = (DS835 >> 7) & 1; Validate Cmd_31_DS; }
+off_on_t Cmd_0_S; invalidate Cmd_0_S;
+{ Cmd_0_S = (DS84C & (1<<0)) ? 0 : 1; Validate Cmd_0_S; }
+off_on_t Cmd_1_S; invalidate Cmd_1_S;
+{ Cmd_1_S = (DS84C & (1<<1)) ? 0 : 1; Validate Cmd_1_S; }
+off_on_t Cmd_2_S; invalidate Cmd_2_S;
+{ Cmd_2_S = (DS84C & (1<<2)) ? 0 : 1; Validate Cmd_2_S; }
+off_on_t Cmd_3_S; invalidate Cmd_3_S;
+{ Cmd_3_S = (DS84C & (1<<3)) ? 0 : 1; Validate Cmd_3_S; }
+off_on_t Cmd_4_S; invalidate Cmd_4_S;
+{ Cmd_4_S = (DS84C & (1<<4)) ? 0 : 1; Validate Cmd_4_S; }
+off_on_t Cmd_5_S; invalidate Cmd_5_S;
+{ Cmd_5_S = (DS84C & (1<<5)) ? 0 : 1; Validate Cmd_5_S; }
+off_on_t Cmd_6_S; invalidate Cmd_6_S;
+{ Cmd_6_S = (DS84C & (1<<6)) ? 0 : 1; Validate Cmd_6_S; }
+off_on_t Cmd_7_S; invalidate Cmd_7_S;
+{ Cmd_7_S = (DS84C & (1<<7)) ? 0 : 1; Validate Cmd_7_S; }
+off_on_t Cmd_8_S; invalidate Cmd_8_S;
+{ Cmd_8_S = (DS855 & (1<<0)) ? 0 : 1; Validate Cmd_8_S; }
+off_on_t Cmd_9_S; invalidate Cmd_9_S;
+{ Cmd_9_S = (DS855 & (1<<1)) ? 0 : 1; Validate Cmd_9_S; }
+off_on_t Cmd_10_S; invalidate Cmd_10_S;
+{ Cmd_10_S = (DS855 & (1<<2)) ? 0 : 1; Validate Cmd_10_S; }
+off_on_t Cmd_11_S; invalidate Cmd_11_S;
+{ Cmd_11_S = (DS855 & (1<<3)) ? 0 : 1; Validate Cmd_11_S; }
+off_on_t Cmd_12_S; invalidate Cmd_12_S;
+{ Cmd_12_S = (DS855 & (1<<4)) ? 0 : 1; Validate Cmd_12_S; }
+off_on_t Cmd_13_S; invalidate Cmd_13_S;
+{ Cmd_13_S = (DS855 & (1<<5)) ? 0 : 1; Validate Cmd_13_S; }
+off_on_t Cmd_14_S; invalidate Cmd_14_S;
+{ Cmd_14_S = (DS855 & (1<<6)) ? 0 : 1; Validate Cmd_14_S; }
+off_on_t Cmd_15_S; invalidate Cmd_15_S;
+{ Cmd_15_S = (DS855 & (1<<7)) ? 0 : 1; Validate Cmd_15_S; }
+off_on_t Cmd_16_S; invalidate Cmd_16_S;
+{ Cmd_16_S = (DS868 & (1<<0)) ? 0 : 1; Validate Cmd_16_S; }
+off_on_t Cmd_17_S; invalidate Cmd_17_S;
+{ Cmd_17_S = (DS868 & (1<<1)) ? 0 : 1; Validate Cmd_17_S; }
+off_on_t Cmd_18_S; invalidate Cmd_18_S;
+{ Cmd_18_S = (DS868 & (1<<2)) ? 0 : 1; Validate Cmd_18_S; }
+off_on_t Cmd_19_S; invalidate Cmd_19_S;
+{ Cmd_19_S = (DS868 & (1<<3)) ? 0 : 1; Validate Cmd_19_S; }
+off_on_t Cmd_20_S; invalidate Cmd_20_S;
+{ Cmd_20_S = (DS868 & (1<<4)) ? 0 : 1; Validate Cmd_20_S; }
+off_on_t Cmd_21_S; invalidate Cmd_21_S;
+{ Cmd_21_S = (DS868 & (1<<5)) ? 0 : 1; Validate Cmd_21_S; }
+off_on_t Cmd_22_S; invalidate Cmd_22_S;
+{ Cmd_22_S = (DS868 & (1<<6)) ? 0 : 1; Validate Cmd_22_S; }
+off_on_t Cmd_23_S; invalidate Cmd_23_S;
+{ Cmd_23_S = (DS868 & (1<<7)) ? 0 : 1; Validate Cmd_23_S; }

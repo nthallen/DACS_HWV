@@ -1,0 +1,62 @@
+%{
+  const char *IxDrive_text[] = {
+	"  <  ",
+	"| <  ",
+	"  < |",
+	"| < |",
+	"  >  ",
+	"| >  ",
+	"  > |",
+	"| > |",
+	"<----",  /* driving in */
+	"|<---",  /* driving in against in limit */
+	"<---|",  /* driving in from out limit */
+	"|<--|",  /* driving in both limits. Broke */
+	"---->",  /* driving out */
+	"|--->",  /* driving out from in limit */
+	"--->|",  /* driving out agains out limit */
+	"|-->|"   /* driving out both limits. Broke */
+  };
+%}
+TM typedef unsigned char IxDriveStat { text "%5d" IxDrive_text[]; }
+IxDriveStat IX0Dgrm; invalidate IX0Dgrm; { IX0Dgrm = IX0Stat & 0xF; Validate IX0Dgrm; }
+%{
+  const char *IxKillStat_text[] = {
+    "----",
+    "---A",
+    "--B-",
+    "--BA",
+    "-Z--",
+    "-Z-A",
+    "-ZB-",
+    "-ZBA",
+    "C---",
+    "C--A",
+    "C-B-",
+    "C-BA",
+    "CZ--",
+    "CZ-A",
+    "CZB-",
+    "CZBA"
+  };
+%}
+TM typedef unsigned char IxKillStat { text "%4d" IxKillStat_text[]; }
+IxKillStat IX0Kill; invalidate IX0Kill; { IX0Kill = (IX0Stat >> 4) & 0xF; Validate IX0Kill; }
+%{
+  const char *IdxFlgTxt[8] = {
+	"    ",
+	"Scan",
+	"On  ",
+	"S/On",
+	"Off ",
+	"S/Of",
+	"Alt ",
+	"S/Al"
+  };
+%}
+TM typedef unsigned short IndxrFlag {
+  text "%4d" IdxFlgTxt[];
+}
+
+IndxrFlag IX0Scan; invalidate IX0Scan;
+{ IX0Scan = ( IXStt ) & 1; validate IX0Scan; }

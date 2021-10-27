@@ -1,0 +1,4 @@
+State Init {
+      > Telemetry Start
+   +1 > CmdEnbl On
+}

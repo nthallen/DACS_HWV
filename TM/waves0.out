@@ -1,0 +1,83 @@
+
+Compiled Output:
+0496: Program Length
+B55F: Time
+4F46:
+0000 x 5: Padding
+: Index: 
+0080: QCLI_0_slow
+01A0: QCLI_0
+041C: QCLI_0_full
+0452: QCLI_0_10MHz
+0488: QCLI_0_ConstantI
+0000 x 115: Fill at end of index
+3331: ICOS Waveform 0 QCLI_0_slow
+0624: DAC0 - 0.06 Amps
+70A3: DAC1 - 30 Amps/Sec
+0000: DAC2 - 0 Amps
+0000: DAC3 - 0 Amps
+0000: Ton-1
+0006: Toff-1
+0001: Tpre (1)
+008A: Loop Address
+0116: Loop Length
+0117 x 14:
+011B x 250:
+0105 x 13:
+0116:
+3331: ICOS Waveform 1 QCLI_0
+0624: DAC0 - 0.06 Amps
+70A3: DAC1 - 30 Amps/Sec
+0000: DAC2 - 0 Amps
+0000: DAC3 - 0 Amps
+0001: Ton-1
+0001: Toff-1
+0001: Tpre (1)
+01AA: Loop Address
+0272: Loop Length
+0117 x 13:
+011B x 500:
+0105 x 13:
+0116 x 100:
+3331: ICOS Waveform 2 QCLI_0_full
+0624: DAC0 - 0.06 Amps
+70A3: DAC1 - 30 Amps/Sec
+0000: DAC2 - 0 Amps
+0000: DAC3 - 0 Amps
+0034: Ton-1
+0034: Toff-1
+0001: Tpre (1)
+0426: Loop Address
+002C: Loop Length
+0117:
+011B x 38:
+0105:
+0116 x 4:
+3331: ICOS Waveform 3 QCLI_0_10MHz
+0106: DAC0 - 0.01 Amps
+6B85: DAC1 - 40 Amps/Sec
+0000: DAC2 - 0 Amps
+0000: DAC3 - 0 Amps
+0034: Ton-1
+0034: Toff-1
+0001: Tpre (1)
+045C: Loop Address
+002C: Loop Length
+0117:
+011B x 38:
+0105:
+0116 x 4:
+3331: ICOS Waveform 4 QCLI_0_ConstantI
+072B: DAC0 - 0.07 Amps
+8000: DAC1 - 0 Amps/Sec
+0000: DAC2 - 0 Amps
+0000: DAC3 - 0 Amps
+00C7: Ton-1
+2647: Toff-1
+0001: Tpre (1)
+0492: Loop Address
+0004: Loop Length
+011F x 2:
+010D:
+011E:
+: Total Length: 1174
